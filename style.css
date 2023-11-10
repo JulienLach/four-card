@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --red-color: hsl(0, 78%, 62%);
+    --cyan-color: hsl(180, 62%, 55%);
+    --range-color: hsl(34, 97%, 64%);
+    --blue-color: hsl(212, 86%, 64%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 40%;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    border: 2px solid yellow;
+}
+
+.header-title1 h1 {
+    color: hsl(240, 1%, 47%);
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.header-title2 h1 {
+    color: hsl(234, 12%, 34%);
+    font-size: 30px;
+}
+
+.header-content {
+    color: hsl(0, 0%, 67%);
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Cards */
+
+
+.content {
+    border: 2px solid purple;
+    width: 80%;
+    height: 650px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.container {
+    border: 1px solid red;
+    padding: 3px;
+    color: hsl(234, 12%, 34%);
+    width: 95%;
+    height: 95%;
+}
+
+.content .container:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .container:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.content .container:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    /* border: 3px solid cyan; */
+    height: 280px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 15px;
+    border: 3px solid cyan;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: red;
+}
+
+
+
+.card-content {
+    color: hsl(0, 0%, 69%);
+    border: 3px solid blue;
+}
+
+.card-content .card-header {
+    color: hsl(0, 0%, 43%);
+    margin-bottom: 15px;
+}
+
+.card-img {
+    display: flex;
+    justify-content: end;
+    border: 3px solid greenyellow;
+}

@@ -8,7 +8,7 @@
 
     --red-color: hsl(0, 78%, 62%);
     --cyan-color: hsl(180, 62%, 55%);
-    --range-color: hsl(34, 97%, 64%);
+    --orange-color: hsl(34, 97%, 64%);
     --blue-color: hsl(212, 86%, 64%);
 }
 
@@ -21,7 +21,7 @@ body {
     margin: auto;
     padding: 30px;
     text-align: center;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 }
 
 .header-title1 h1 {
@@ -45,7 +45,7 @@ body {
 
 
 .content {
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     width: 80%;
     height: 650px;
     margin: auto;
@@ -56,7 +56,7 @@ body {
 }
 
 .container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 3px;
     color: hsl(234, 12%, 34%);
     width: 95%;
@@ -84,41 +84,98 @@ body {
 
 .card {
     /* border: 3px solid cyan; */
-    height: 280px;
     position: relative;
+    height: 280px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 35px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     border-radius: 15px;
-    border: 3px solid cyan;
 }
 
-.card::after {
+.card:nth-child(1):after {
     content: '';
+    border-top: 5px solid var(--cyan-color);
+    border-radius: 6px;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 3px;
-    background: red;
+    height: 100%;
 }
 
+.card:nth-child(2):after {
+    content: '';
+    border-top: 5px solid var(--orange-color);
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
 
 
 .card-content {
     color: hsl(0, 0%, 69%);
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 
 .card-content .card-header {
-    color: hsl(0, 0%, 43%);
+    color: hsl(0, 0%, 33%);
     margin-bottom: 15px;
 }
 
 .card-img {
     display: flex;
     justify-content: end;
-    border: 3px solid greenyellow;
+    /* border: 2px solid greenyellow; */
+}
+
+@media (max-width: 768px) {
+
+    .content {
+        width: 95%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .content {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .main {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+        /* border: 2px solid yellow; */
+    }
+
+    .card {
+        height: 220px;
+        margin-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .header-content {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .header {
+        margin-top: 30px;
+    }
+
+    .header-title1 h1 {
+        font-size: 25px;
+    }
+
+    .header-title2 h1 {
+        font-size: 25px;
+    }
+
 }

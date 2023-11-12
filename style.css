@@ -45,7 +45,7 @@ body {
 
 
 .content {
-    /* border: 2px solid purple; */
+    border: 2px solid purple;
     width: 80%;
     height: 650px;
     margin: auto;
@@ -56,7 +56,7 @@ body {
 }
 
 .container {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     padding: 3px;
     color: hsl(234, 12%, 34%);
     width: 95%;

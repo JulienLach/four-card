@@ -46,7 +46,7 @@ body {
 
 .content {
     /* border: 2px solid purple; */
-    width: 80%;
+    max-width: 1300px;
     height: 650px;
     margin: auto;
     display: grid;

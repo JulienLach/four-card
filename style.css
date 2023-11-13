@@ -94,27 +94,51 @@ body {
     border-radius: 15px;
 }
 
-.card:nth-child(1):after {
+.card-red:after {
+    border-top:5px solid var(--red-color);
     content: '';
-    border-top: 5px solid var(--cyan-color);
     border-radius: 6px;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 100%;
-}
+  }
 
-.card:nth-child(2):after {
+.card-cyan:after {
+    border-top:5px solid var(--cyan-color);
     content: '';
-    border-top: 5px solid var(--orange-color);
     border-radius: 6px;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 100%;
-}
+  }
+
+.card-orange:after {
+    border-top:5px solid var(--orange-color);
+    content: '';
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+  }
+
+.card-blue:after {
+    border-top:5px solid var(--blue-color);
+    content: '';
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+  }
+
+
 
 
 .card-content {
